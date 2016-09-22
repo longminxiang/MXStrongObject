@@ -33,11 +33,13 @@ static int _uid = 0;
     [button addTarget:self action:@selector(pushVC) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
     
-    __MX_STRONG_ALLOC_AND_WEAK(TestObj, obj, wobj);
+    TestObj *obj = [TestObj mx_initWithOwner:self];
     obj.text = [NSString stringWithFormat:@"obj %d", _uid++];
-    [self testDelayStrong:obj string:self.string block:^(TestObj *tobj) {
-        __MX_REMOVE(wobj);
-    }];
+    
+//    [self testDelayStrong:obj string:self.string block:^(TestObj *tobj) {
+//        __MX_REMOVE(wobj);
+//    }];
+    [self testDelayStrong];
 }
 
 - (void)testStrong
@@ -52,12 +54,12 @@ static int _uid = 0;
 
 - (void)testDelayStrong
 {
-    __MX_STRONG_ALLOC(TestObj, obj);
+    TestObj *obj = [TestObj mx_initWithOwner:self];
     obj.text = [NSString stringWithFormat:@"obj %d", _uid++];
     
-    __MX_WEAK(obj, wobj);
+//    __weak typeof(obj) wobj = obj;
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        __MX_REMOVE(wobj);
+        [obj mx_removeStrongObjectFromOwner];
     });
 }
 

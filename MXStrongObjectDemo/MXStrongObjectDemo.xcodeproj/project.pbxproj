@@ -12,8 +12,8 @@
 		070C05351BB39F9100D705AD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 070C05341BB39F9100D705AD /* ViewController.m */; };
 		070C053A1BB39F9100D705AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 070C05391BB39F9100D705AD /* Assets.xcassets */; };
 		070C053D1BB39F9100D705AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 070C053B1BB39F9100D705AD /* LaunchScreen.storyboard */; };
-		070C05471BB39FC600D705AD /* MXStrongObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 070C05461BB39FC600D705AD /* MXStrongObject.m */; settings = {ASSET_TAGS = (); }; };
-		070C054A1BB3A8B500D705AD /* TestObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 070C05491BB3A8B500D705AD /* TestObj.m */; settings = {ASSET_TAGS = (); }; };
+		070C05471BB39FC600D705AD /* MXStrongObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 070C05461BB39FC600D705AD /* MXStrongObject.m */; };
+		070C054A1BB3A8B500D705AD /* TestObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 070C05491BB3A8B500D705AD /* TestObj.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -121,7 +121,7 @@
 		070C05221BB39F9100D705AD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = eric;
 				TargetAttributes = {
 					070C05291BB39F9100D705AD = {
@@ -199,8 +199,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -242,8 +244,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";

@@ -22,7 +22,8 @@ __MX_STRONG(__obj)
 __MX_STRONG_ALLOC(__cls, __obj); \
 __MX_WEAK(__obj, __weakObj);
 
-@interface NSObject (MXStrongObject)
+
+@interface NSObject (MXStrongObjectOwner)
 
 /**
  *  make an object strong;
@@ -38,6 +39,15 @@ __MX_WEAK(__obj, __weakObj);
  *  @param obj object
  */
 - (void)mx_removeStrongObject:(id)obj;
+
+@end
+
+@interface NSObject (MXStrongObject)
+
+/**
+ *  init with the owner
+ */
++ (instancetype)mx_initWithOwner:(__weak id)owner;
 
 /**
  *  remove self from owner's strong Manager
