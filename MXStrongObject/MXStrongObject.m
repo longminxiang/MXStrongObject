@@ -66,7 +66,6 @@ void mx_strong_object_class_swizzleMethodAndStore(Class class, SEL originalSelec
     });
 }
 
-
 - (void)mx_addStrongObject:(id)obj
 {
     if (!obj) return;
@@ -92,6 +91,7 @@ void mx_strong_object_class_swizzleMethodAndStore(Class class, SEL originalSelec
     for (NSObject *obj in self.mx_strongObjects) {
         obj.mx_owner = nil;
     }
+    [self.mx_strongObjects removeAllObjects];
     [self mx_strong_object_dealloc];
 }
 

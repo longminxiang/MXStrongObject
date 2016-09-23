@@ -34,7 +34,7 @@ __MX_WEAK(__obj, __weakObj);
 - (void)mx_addStrongObject:(id)obj;
 
 /**
- *  remove an object from strongManager
+ *  remove an object from strong manager
  *
  *  @param obj object
  */
@@ -50,7 +50,7 @@ __MX_WEAK(__obj, __weakObj);
 + (instancetype)mx_initWithOwner:(__weak id)owner;
 
 /**
- *  remove self from owner's strong Manager
+ *  remove self from owner's strong manager
  */
 - (void)mx_removeStrongObjectFromOwner;
 

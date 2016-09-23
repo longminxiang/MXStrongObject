@@ -30,6 +30,7 @@
 		070C05461BB39FC600D705AD /* MXStrongObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXStrongObject.m; sourceTree = "<group>"; };
 		070C05481BB3A8B500D705AD /* TestObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObj.h; sourceTree = "<group>"; };
 		070C05491BB3A8B500D705AD /* TestObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObj.m; sourceTree = "<group>"; };
+		07A663911D94D22300AA9C4B /* MXStrongObject.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = MXStrongObject.podspec; path = ../MXStrongObject.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +47,7 @@
 		070C05211BB39F9100D705AD = {
 			isa = PBXGroup;
 			children = (
+				07A663911D94D22300AA9C4B /* MXStrongObject.podspec */,
 				070C05441BB39FC600D705AD /* MXStrongObject */,
 				070C052C1BB39F9100D705AD /* MXStrongObjectDemo */,
 				070C052B1BB39F9100D705AD /* Products */,

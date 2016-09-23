@@ -57,9 +57,9 @@ static int _uid = 0;
     TestObj *obj = [TestObj mx_initWithOwner:self];
     obj.text = [NSString stringWithFormat:@"obj %d", _uid++];
     
-//    __weak typeof(obj) wobj = obj;
+    __weak typeof(obj) wobj = obj;
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [obj mx_removeStrongObjectFromOwner];
+        [wobj mx_removeStrongObjectFromOwner];
     });
 }
 
